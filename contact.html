@@ -26,5 +26,25 @@
 			<li><h2><a href="mailto:kazimarzuk25@gmail.com">E-mail me here</a></h2></li>
 		</ul>	
 	</div>
+	<h2>Comments</h2>
+	<form action="process.php" method="POST">
+		<div>
+			<label>First Name:<input type="text" name="first_name"></label>
+		</div>
+		<div>
+			<label>Last Name:<input type="text" name="last_name"></label>
+		</div>
+		<div>
+			<label>Email:<input type="text" name="email"></label>
+		</div>
+		<div>
+			<label for="comments">Comments:</label>
+		
+			<textarea id="comments" name="comments"></textarea>
+		</div>
+		<div>
+			<label><input type="submit"></label>
+		</div>
+	</form>
 </body>
 </html>
