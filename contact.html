@@ -3,48 +3,52 @@
 <head>
 	<title>Contact Page</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="reset.css">
 </head>
 <body>
-	<div>
-		<ul>
+	<div id="nav">
+		<ul class="list">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About</a></li>
 			<li><a href="contact.html">Contact</a></li>
 	  </ul>
 	</div>
-	<div>
-		<h1>My Socials</h1>
-		<div>
-			<img src="profilepic2.jpg" alt="a pic of myself">
-			<img src="thumbnail.png" alt="a thumbnail of me as a webdev">
+	<div id="contact-page">
+		<div class="content">
+			<h1>My Socials</h1>
+
+			<div class="image-gallery">
+				<img src="profilepic2.jpg" alt="a pic of myself">
+				<img src="thumbnail.png" alt="a thumbnail of me as a webdev">
+			</div>
+
+			<ul class="social-links">
+				<li><h2><a href="https://en-gb.facebook.com/kazi.marzuk.3">Facebook</a></h2></li>
+				<li><h2><a href="https://github.com/KashXO">Github</a></h2></li>
+				<li><h2><a href="mailto:kazimarzuk25@gmail.com">E-mail me here</a></h2></li>
+			</ul>
+
+			<h2>Comments</h2>
+			<form class="contact-form" action="process.php" method="POST">
+				<div>
+					<label>First Name:<input type="text" name="first_name"></label>
+				</div>
+				<div>
+					<label>Last Name:<input type="text" name="last_name"></label>
+				</div>
+				<div>
+					<label>Email:<input type="text" name="email"></label>
+				</div>
+				<div>
+					<label for="comments">Comments:</label>
+					<textarea id="comments" name="comments"></textarea>
+				</div>
+				<div>
+					<input type="submit" value="Send">
+				</div>
+			</form>
 		</div>
-		<ul>
-			<li><h2><a href="https://en-gb.facebook.com/kazi.marzuk.3">Facebook</a></h2></li>
-			
-			<li><h2><a href="https://github.com/KashXO">Github</a></h2></li>
-			
-			<li><h2><a href="mailto:kazimarzuk25@gmail.com">E-mail me here</a></h2></li>
-		</ul>	
 	</div>
-	<h2>Comments</h2>
-	<form action="process.php" method="POST">
-		<div>
-			<label>First Name:<input type="text" name="first_name"></label>
-		</div>
-		<div>
-			<label>Last Name:<input type="text" name="last_name"></label>
-		</div>
-		<div>
-			<label>Email:<input type="text" name="email"></label>
-		</div>
-		<div>
-			<label for="comments">Comments:</label>
-		
-			<textarea id="comments" name="comments"></textarea>
-		</div>
-		<div>
-			<label><input type="submit"></label>
-		</div>
-	</form>
 </body>
 </html>
